@@ -3,43 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Página Inicial - Login</title>
-    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
-     
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
-    
-    <div class="main-login">
-        <div class="left-login">
-            <h1>Seja bem-vindo, aluno! <br>Faça seu login</h1>
-            <img src="animacaozinha.svg"class="left-login-image" alt="Imagem Acedemica">
-        </div>
-        <div class="right-login">
-            <div class="card-login">
+    <main>
+        <div class="box">
+            <div class="inner-box">
+                <div class="forms-wrap">
+                    <form action="index.html" autocomplete="off" class="sign-in-form">
+                        <div class="logo">
+                            <img src="/img/logoUnimar.png" alt="easyclass">
+                            <h3>easyclass</h3>
+                        </div>
+
+                        <div class="heading">
+                            <h2>Welcome Back</h2>
+                            <h6>Not registred yet?</h6>
+                            <a href="" class="toggle">Sign up</a>
+                        </div>
 
 
-                <h1>LOGIN</h1>
-                <div class="textfield">
-                    <i class="fas fa-user"></i>
-                    <label for="usuario">Usuário</label>
-                    <input type="text" name="usuario" placeholder="Usuário">
+                        <div class="actual-form">
+                            <div class="input-wrap">
+                                <input type="text" minlength="4" id="name" autocomplete="off" required  class="input-field">
+                                <label for="name">Nome</label>
+                            </div>
+
+                            <div class="input-wrap">
+                                <input type="text" minlength="4" id="password" autocomplete="off" required  class="input-field">
+                                <label for="password">Senha</label>
+                            </div>
+
+                            <input type="submit" value="Sign in" class="sign-btn">
+                            <p class="text">Forgotten your password or you login details?</p>
+                            <a href="#">Get help</a> signing up
+                        </div>
+                    </form>
                 </div>
-
-
-                <div class="textfield">
-
-                    <i class="fas fa-lock"></i>
-                    <label for="senha">Senha</label>
-                    <input type="password" name="senha" placeholder="Senha">
-                </div>
-
-
-                <button class="btn-login">Login</button>
+                <div class="carousel"></div>
             </div>
-        </div>
-    </div>
 
+        </div>
+    </main>
+
+    <!---ARQUIVO JAVA-->
+    <script src="app.js"></script>
 </body>
 </html>
