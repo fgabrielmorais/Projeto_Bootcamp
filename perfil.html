@@ -2,27 +2,199 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu perfil</title>
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="sidebar.css">
     <link rel="stylesheet" href="perfil.css">
-</head>
-<body>
-    
 
-    <div class="container">
-        <div class="profile-header">
-            <div class="profile-img">
-                <img src="img/imgProfile.jfif" alt="">
+    <!-- Icones -->
+
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <img src="img/logo_unimar.png" alt="">
+
+            </div>
+
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+
+        <ul class="nav_list">
+
+           <!-- Barra de pesquisa -->
+            <li>        
+                   <i class='bx bx-search' ></i>
+                   <input type="text" placeholder="Pesquisar">
+                <span class="tooltip">Pesquisar</span>
+            </li>
+
+            <li>
+                <a href="">
+                    <i class='bx bx-time-five'></i>
+                    <span class="links_name">Horários de aula</span>
+                </a>
+
+                <span class="tooltip">Horários</span>
+            </li>
+
+            <li>
+                <a href="">
+                    <i class='bx bxs-graduation' ></i>
+                    <span class="links_name">Minhas notas</span>
+                </a>
+
+                <span class="tooltip">Minhas notas</span>
+            </li>
+
+            <li>
+                <a href="">
+                    <i class='bx bx-bell'></i>
+                    <span class="links_name">Avisos</span>
+                </a>
+
+                <span class="tooltip">Avisos</span>
+            </li>
+
+            <li>
+                <a href="">
+                    <i class='bx bx-briefcase'></i>
+                    <span class="links_name">Estágios</span>
+                </a>
+
+                <span class="tooltip">Estágios</span>
+            </li>
+
+        
+            <li>
+                <a href="">
+                    <i class='bx bx-cog'></i>
+                    <span class="links_name">Configurações</span>
+                </a>
+
+                <span class="tooltip">Configurações</span>
+            </li>
+        </ul>
+
+
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="img/imgProfile.jfif" alt="">
+                    <div class="name_job">
+                        <div class="name">Gabriel Felix</div>
+                        <div class="job">Aluno</div>
+                    </div>
+                </div>
+
+              <a href="index.html" style="color: #fff; text-decoration: none;"><i class="bx bx-log-out" id="log_out" ></i></a>
             </div>
         </div>
     </div>
 
+    <div class="home_content">
+
+
+        <div class="container">
+            <div class="profile-header">
+                <div class="profile-img">
+                    <img src="img/imgProfile.jfif" alt=""> 
+                </div>
+
+                <div class="profile-nav-info">
+                    <h3 class="user-name">Bright COde</h3>
+                    <div class="adress">
+                        <p class="state">Marília, São Paulo</p>
+                        <span class="country">Brasil</span>
+                    </div>
+                </div>
+
+                <div class="profile-option">
+                    <div class="notification">
+                        <i class='bx bx-time-five'></i>
+                        <span class="alert-message">1</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="main-bd">
+                <div class="left-side">
+                    <div class="profile-side">
+                        <p class="mobile-no"> <i class='bx bx-time-five'></i>23470xxxxxxxx5464</p>
+                        <p class="user-email"><i class='bx bx-time-five'></i>fgabrielmorais05@gmail.com</p>
+                        <div class="user-bio">
+                            <p class="bio">LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem</p>
+                        </div>
+
+                        <div class="profile-btn">
+                            <button class="chatbtn"><i class='bx bx-time-five'></i>Chat</button>
+                            <button class="createbtn"><i class='bx bx-time-five'></i>Create</button>
+                        </div>
+
+                        <div class="user-rating">
+                            <h3 class="rating">4.5</h3>
+                            <div class="rate">
+                            <i class='bx bx-time-five'></i>
+                            <i class='bx bx-time-five'></i>
+                            <i class='bx bx-time-five'></i>
+                            <i class='bx bx-time-five'></i>    
+                            </div>
+                            <span class="no-user">
+                                <span>123</span>&nbsp;&nbsp; reviews
+                            </span>
+                        </div>
+                    </div>
+
+
+                    <div class="right-side">
+                        <div class="nav">
+                            <ul>
+                                <li onclick="tabs(0)"  class="user-post"></li>
+                                <li onclick="tabs(1)"   class="user-review"></li>
+                                <li onclick="tabs(2)"   class="user-setting"></li>
+                            </ul>
+                        </div>
+
+                        <div class="profile-body">
+                            <div class="profile-posts tab">
+                             <h1>Your Posts</h1>
+                             <p>OI</p>   
+                            </div>
+
+
+                            <div class="profile-reviews tab"> 
+                                <h1>User Reviews</h1>
+                                <p>Tchau</p>
+                            </div>
+                            <div class="profile-setting tab">
+                                <h1>Account Setting</h1>
+                                <p>Feliz Natal</p>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
 
 
-    <script src="perfil.js"></script>
+    </div>
+
+
+
+    <script src="pagina_inicial.js"></script>
+    <script></script>
+
+
+    
 </body>
+
+
 </html>
