@@ -21,6 +21,8 @@
     margin: 0 100px;
 }
 
+
+
 .profile-header{
     background: #fff;
     width: 100%;
@@ -61,6 +63,7 @@
     font-variant: small-caps;
     font-size: 2rem;
     font-weight: bold;
+    font-family: sans-serif;
 }
 
 .profile-nav-info .address{
@@ -69,7 +72,7 @@
     color: #0072bc;
 }
 
-.profile-nav-info .address{
+.profile-nav-info .address p{
     margin-right: 5px;
 }
 
@@ -141,6 +144,8 @@
     z-index: 99;
 }
 
+
+
 .profile-side p{
     margin-bottom: 7px;
     color: #333;
@@ -161,8 +166,8 @@
     display: flex;
 }
 
-.chatbtn,
-.createbtn{
+button.chatbtn,
+button.createbtn{
     border: 0;
     padding: 10px;
     width: 100%;
@@ -175,15 +180,16 @@
     margin-bottom: 10px;
     transition: background .3s ease-in-out;
     box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, .3);
+    color: #fff;
 }
 
-.chatbtn:hover,
-.createbtn:hover{
+button.chatbtn:hover,
+button.createbtn:hover{
     background: rgba(288, 0, 70, .1);
 }
 
-.chatbtn i,
-.createbtn i{
+button.chatbtn i,
+button.createbtn i{
     margin-right: 5px;
 }
 
@@ -199,4 +205,47 @@
     color: #666;
 }
 
-.user-rating .no
+.user-rating .no-user{
+    font-size: .9rem;
+}
+
+.rate{
+    padding-top: 6px;
+}
+
+.rate i{
+    font-size: .9rem;
+    color: var(--UnimarCor);
+}
+
+.nav {
+    width: 100%;
+    z-index: -1;
+}
+
+
+
+
+.nav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    height: 40px;
+    background: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .3);
+}
+
+.nav ul li{
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    transition: all .2s ease-in-out;
+}
+
+.nav ul li.active,
+.nav ul li:hover{
+    box-shadow: 0px -3px 0px rgba(288, 0, 70, .9) inset;
+}
+
+
