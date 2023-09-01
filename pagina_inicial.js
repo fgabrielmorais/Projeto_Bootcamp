@@ -1,12 +1,11 @@
+let accordions = document.querySelectorAll('.accordion-wrapper .accordion');
 
-let btn = document.querySelector("#btn");
-let sidebar = document.querySelector(".sidebar");
-let searchBtn = document.querySelector(".bx-search");
 
-btn.onclick = function() {
-    sidebar.classList.toggle("active");
-}
-
-searchBtn.onclick = function(){
-    sidebar.classList.toggle("active");
-}
+accordions.forEach((acco) => {
+    acco.onclick = () => {
+        accordions.forEach((subcontent) => {
+            subcontent.classList.remove("active_accordion")
+        })
+        acco.classList.add("active_accordion");
+    }
+});

@@ -176,3 +176,92 @@ input[type="radio"] {
     width: 100%;
   }
 }
+
+
+
+
+/* CSS DOS ESTAGIOS */
+
+
+
+.container_geral_estagios {
+  width: 100%;
+  position: relative;
+}
+
+.container_estagios{
+  max-width: 700px;
+  margin: 20px ;
+}
+
+.container_estagios .heading{
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.container_estagios .accordion-wrapper{
+  padding: 0 20px;
+}
+
+.container_estagios .accordion{
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.container_estagios .accordion.active_accordion .accordion-heading{
+   background: #0072bc;
+   color: #fff;
+}
+
+.container_estagios .accordion.active_accordion .accordion-heading i{
+  color: #fff;
+  transform: rotate(180deg);
+  transition: all 0.4s ease-in-out;
+}
+
+.container_estagios .accordion.active_accordion .accordion-content{
+  display: block;
+
+}
+
+
+.container_estagios .accordion-heading{
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 10px;
+  background: #fff;
+  border: 2px solid #333;
+  padding: 15px 20px;
+}
+
+.container_estagios .accordion-heading h3{
+  font-size: 20px;
+}
+.container_estagios .accordion-content{
+  padding: 15px 20px;
+  border: 2px solid #333;
+  font-size: 15px;
+  background: #fff;
+  border-top: 0;
+  display: none;
+  animation: animate 0.35s normal;
+  line-height: 2;
+  transform-origin: top;
+}
+
+@keyframes animate{
+  0%{
+    transform: scaleY(0);
+  }
+}
+
+
+
+
+
+
+
