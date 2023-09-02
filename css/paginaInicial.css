@@ -134,7 +134,7 @@ body {
 .button label {
   height: 15px;
   width: 15px;
-  background: #fff;
+  background: #0072bc;
   margin: 0 4px;
   border-radius: 20px;
   transition: all 0.5s ease;
@@ -234,12 +234,13 @@ input[type="radio"] {
   justify-content: space-between;
   gap: 10px;
   background: #fff;
-  border: 2px solid #333;
+  border: 1px solid #333;
   padding: 15px 20px;
 }
 
 .container_estagios .accordion-heading h3{
-  font-size: 20px;
+  font-size: 17px;
+  font-weight: 400;
 }
 .container_estagios .accordion-content{
   padding: 15px 20px;

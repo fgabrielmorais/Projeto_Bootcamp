@@ -14,7 +14,7 @@
   }
   
   body {
-    position: relative;
+
     overflow-x: hidden;
     background-color: #ebedf0;
     padding-top: 90px;
@@ -27,9 +27,9 @@
     background: #fff;
     width: 100%;
     display: flex;
-    height: 190px;
+    height: 30vh;
     position: relative;
-    box-shadow: 0px 3px 4px rgba(0, 0, 0, .2);
+    box-shadow: 0px 3px 4px rgba(37, 186, 255, 0.2);
 }
 
 .profile-img {
@@ -42,8 +42,8 @@
     border-radius: 50%;
     height: 230px;
     width: 230px;
-    border: 4px solid #fff;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, .2);
+    border: 4px solid var(--UnimarCor);
+    box-shadow: 0px 3px 4px rgba(37, 186, 255, 0.2);
     position: absolute;
     left: 50px;
     top: 20px;
@@ -60,15 +60,15 @@
 }
 
 .profile-nav-info h3{
-    font-variant: small-caps;
-    font-size: 2rem;
-    font-weight: bold;
+
+    font-size: 1.6rem;
+    font-weight: 400;
     font-family: sans-serif;
 }
 
 .profile-nav-info .address{
     display: flex;
-    font-weight: bold;
+    font-weight: normal;
     color: #0072bc;
 }
 
@@ -138,7 +138,7 @@
 .profile-side{
     width: 300px;
     background: #fff;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, .2);
+    box-shadow: 0px 3px 4px rgba(37, 186, 255, 0.2);
     padding: 90px 30px 20px;
     margin-left: 10px;
     z-index: 99;
@@ -149,7 +149,7 @@
 .profile-side p{
     margin-bottom: 7px;
     color: #333;
-    font-size: 14px;
+    font-size: 0.8rem;
 }
 
 .profile-side p i{
@@ -232,7 +232,7 @@ button.createbtn i{
     list-style-type: none;
     height: 40px;
     background: #fff;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, .3);
+    box-shadow: 0px 1px 2px rgba(37, 186, 255, 0.2);
 }
 
 .nav ul li{
@@ -245,7 +245,7 @@ button.createbtn i{
 
 .nav ul li.active_nav,
 .nav ul li:hover{
-    box-shadow: 0px -3px 0px rgba(288, 0, 70, .9) inset;
+    box-shadow: 0px -3px 0px var(--UnimarCor) inset;
 }
 
 .profile-body{
@@ -364,3 +364,87 @@ button.createbtn i{
 
 
 }
+
+
+/* 
+CSS DA TABELA DE NOTAS */
+
+
+.table-container{
+    padding: 0 5%;
+    margin: 40px auto 0;
+}
+
+.heading_table{
+    font-size: 30px;
+    text-align: start;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table thead{
+    background: #0072bc;
+}
+
+.table thead tr th{
+    font-size: 14px;
+    font-weight: medium;
+    letter-spacing: 0.35px;
+    color: #fff;
+    opacity: 1;
+    padding: 12px;
+    vertical-align: top;
+    border: 1px solid #fff;
+}
+
+.table tbody tr td{
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    font-weight: normal;
+    color: #000;
+    background-color: #fff;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid var(--UnimarCor);
+}
+
+@media (max-width: 768px){
+    .table thead{
+        display: none;
+    }
+
+    .table, .table tbody, .table tr, .table td{
+        display: block;
+        width: 100%;
+    }
+
+    .table tr{
+        margin-bottom: 15px;
+    }
+
+    .table tbody tr td{
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    .table td::before{
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: left;
+        
+    }
+}
+
+
+
